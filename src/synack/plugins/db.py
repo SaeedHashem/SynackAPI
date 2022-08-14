@@ -105,7 +105,8 @@ class Db(Plugin):
                         Port.protocol.like(port.get('protocol')),
                         Port.ip.like(ip.id),
                         Port.source.like(result.get('source')))
-                    db_port = q.filter(filt)
+                    #db_port = q.filter(filt)
+                    db_port = None
                     if not db_port:
                         db_port = Port(
                             port=port.get('port'),
