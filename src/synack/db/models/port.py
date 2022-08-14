@@ -20,5 +20,3 @@ class Port(Base):
     open = sa.Column(sa.BOOLEAN, default=False)
     service = sa.Column(sa.VARCHAR(200), default="")
     updated = sa.Column(sa.INTEGER, default=0)
-    url = sa.Column(sa.VARCHAR(200), default="")
-    screenshot_url = sa.Column(sa.VARCHAR(1000), default="")
