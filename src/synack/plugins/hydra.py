@@ -58,6 +58,7 @@ class Hydra(Plugin):
         """Get Hydra results for target identified using kwargs (codename='x', slug='x', etc.)"""
         max_page = 1000 if max_page == 0 else max_page
         results = list()
+        target = None
         targets = self.db.find_targets(**kwargs)
         if targets:
             target = targets[0]
